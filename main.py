@@ -85,7 +85,7 @@ class UM:
         e - user identifier
 
         Returns:
-        Numeric value
+        Numeric value (percentage discount)
         """
         pass
 
