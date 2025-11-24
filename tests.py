@@ -7,11 +7,11 @@ class TestUserManagerB(unittest.TestCase):
 
     def setUp(self):
         self.m = UM()
-        # Add test users (same data as group A)
-        self.m.au("John Smith", "john@example.com", "1990-05-15")
-        self.m.au("Anna Johnson", "anna@example.com", "2005-08-20")
-        self.m.au("Peter Wilson", "peter@example.com", "1955-12-01")
-        self.m.au("Maria Brown", "maria@example.com", "2010-03-10")
+        # Add test users with updated dates for 2025
+        self.m.au("John Smith", "john@example.com", "1990-05-15")  # 34-35 years - adult
+        self.m.au("Anna Johnson", "anna@example.com", "2010-08-20")  # 14-15 years - child
+        self.m.au("Peter Wilson", "peter@example.com", "1955-12-01")  # 69-70 years - senior
+        self.m.au("Maria Brown", "maria@example.com", "2015-03-10")  # 9-10 years - child
 
     def test_ca_adult(self):
         """Test age calculation for adult"""
